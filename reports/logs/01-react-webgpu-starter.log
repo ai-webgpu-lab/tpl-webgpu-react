@@ -1,0 +1,101 @@
+repo=tpl-webgpu-react
+scenario=React WebGPU Starter
+captured_at=2026-04-22T06:55:20.456Z
+browser=Chromium 147.0.7727.15
+headless=true
+meta_scenario=react-webgpu-starter
+status=success
+
+[page-console]
+(none)
+
+[harness-logs]
+./reports/logs/01-react-webgpu-starter.log
+
+[result-json]
+{
+  "meta": {
+    "repo": "tpl-webgpu-react",
+    "commit": "87b2478",
+    "timestamp": "2026-04-22T06:55:20.176Z",
+    "owner": "ai-webgpu-lab",
+    "track": "infra",
+    "scenario": "react-webgpu-starter",
+    "notes": "No-build React starter with capability panel and canvas mount flow.; automation=playwright-chromium",
+    "capture_context": {
+      "tool": "playwright-chromium",
+      "browser_name": "Chromium",
+      "browser_version": "147.0.7727.15",
+      "headless": true,
+      "captured_at": "2026-04-22T06:55:20.456Z",
+      "captured_by": "zzragida"
+    }
+  },
+  "environment": {
+    "browser": {
+      "name": "Chrome",
+      "version": "147.0.7727.15"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "unknown"
+    },
+    "device": {
+      "name": "Linux x86_64",
+      "class": "desktop-high",
+      "cpu": "16 threads",
+      "memory_gb": 16,
+      "power_mode": "unknown"
+    },
+    "gpu": {
+      "adapter": "WebGPU adapter",
+      "required_features": [
+        "core-features-and-limits"
+      ],
+      "limits": {
+        "maxTextureDimension2D": 8192,
+        "maxBindGroups": 4,
+        "maxBufferSize": 268435456,
+        "maxStorageBufferBindingSize": 134217728
+      }
+    },
+    "backend": "webgpu",
+    "fallback_triggered": false,
+    "worker_mode": "main",
+    "cache_state": "unknown"
+  },
+  "workload": {
+    "kind": "graphics",
+    "name": "react-webgpu-canvas",
+    "input_profile": "react-no-build-static",
+    "renderer": "react-plus-raw-webgpu",
+    "resolution": "960x540"
+  },
+  "metrics": {
+    "common": {
+      "time_to_interactive_ms": 1584.9,
+      "init_ms": 8.9,
+      "success_rate": 1,
+      "peak_memory_note": "16 GB reported by browser",
+      "error_type": "Device was destroyed."
+    },
+    "graphics": {
+      "avg_fps": 60,
+      "p95_frametime_ms": 16.7,
+      "scene_load_ms": 8.9,
+      "resolution_scale": 1,
+      "taa_enabled": false,
+      "visual_artifact_note": "React shell mounted successfully and WebGPU scene rendered."
+    }
+  },
+  "status": "success",
+  "artifacts": {
+    "raw_logs": [
+      "./reports/logs/01-react-webgpu-starter.log"
+    ],
+    "deploy_url": "https://ai-webgpu-lab.github.io/tpl-webgpu-react/",
+    "screenshots": [
+      "./reports/screenshots/01-react-webgpu-starter.png"
+    ]
+  }
+}
